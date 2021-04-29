@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/background.jpg';
 
 export const HomeContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(${ImgBg});
+    url(${"https://www.tastetoronto.com/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOW5VQkE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0761b83c30f6aa03141263d6330801b515876547/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9MY21WemFYcGxTU0lJT0RBd0Jqb0dSVlE9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--2a7f989792e78b08bd8691aa5aea894e9d5c2f92/the-best-sushi-takeout-in-toronto.jpeg"});
   height: 100vh;
   background-position: center;
   background-size: cover;

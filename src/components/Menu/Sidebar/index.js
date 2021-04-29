@@ -7,6 +7,7 @@ import {
   CloseIcon
 } from './sidebar';
 
+//allows user to see differnt pages with react-router
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle} >

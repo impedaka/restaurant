@@ -8,7 +8,7 @@ import {
   HomeBtn
 } from './HomePage';
 import {Link} from 'react-router-dom';
-
+//homepage
 const Home = () => {
   return (
     <HomeContainer>

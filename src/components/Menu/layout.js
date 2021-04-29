@@ -1,16 +1,32 @@
 import styled from 'styled-components';
 import {AiOutlineInfoCircle} from 'react-icons/ai'
 import {IoIosAddCircle} from 'react-icons/io';
-import {GoDiffAdded} from 'react-icons/go';
-import {GoDiffRemoved} from 'react-icons/go';
-import {AiOutlineEdit} from 'react-icons/ai';
-import {BsArrowReturnLeft} from 'react-icons/bs';
-import {BsBookmarkCheck} from 'react-icons/bs';
+import {BsFillTrashFill} from 'react-icons/bs';
 
-export const Checkout = styled.nav`
-text-align: center;
-padding: 100px;
-color: white;
+export const Quantity = styled.nav`
+select {
+  font-size: 1rem;
+  border-radius: 7px;
+  background-color: #F0F2F2; 
+  padding: 4px;
+  box-shadow: 0 2px 5px rgba(15,17,17,.15);
+  :focus {
+      outline: none;
+  }
+}
+`
+export const Delete = styled(BsFillTrashFill)`
+font-size: 1.5rem;
+transform: translate(-50%, -15%);
+color: grey;
+position: relative;
+left: 140px;
+top: 40px;
+cursor: pointer;
+&:hover {
+  color: black;
+  transition: 0.2s ease-in-out;
+}
 `
 export const Info = styled(AiOutlineInfoCircle)`
 font-size: 1.5rem;
