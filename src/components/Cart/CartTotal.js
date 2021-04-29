@@ -6,6 +6,8 @@ function CartTotal({getTotalPrice}) {
         return (
         <div>
             SubTotal: ${getTotalPrice()}
+            Total: ${getTotalPrice()*1.13}
+            Tax: ${getTotalPrice()*0.13}
             <Link to="/checkout"><button>Check Out</button></Link>
         </div>
     )
