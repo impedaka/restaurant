@@ -1,5 +1,5 @@
 import React from 'react'
-import {Info, Add} from './layout';
+import {Info, Add} from '../layout';
 import { db } from '../../firebase'
 
 function Foods({title, price, image, id}) {

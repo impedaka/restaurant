@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Foods from '../../foods'
-import {Layout} from '../../layout';
+import {Layout} from '../../../layout';
 import { db } from '../../../../firebase'
 
 //displays food data from db

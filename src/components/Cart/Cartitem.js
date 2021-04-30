@@ -1,5 +1,5 @@
 import React from 'react'
-import {Info, Delete, Quantity} from '../Menu/layout';
+import {Info, Delete, Quantity} from '../layout';
 import {db} from '../../firebase';
 
 //allows user to delete items from db

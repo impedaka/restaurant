@@ -1,7 +1,7 @@
 import React from 'react'
 import CartItems from './Cartitems';
 import CartTotal from './CartTotal';
-import {} from '../Menu/layout';
+import {} from '../layout';
 
 function Cart({ cartItems }) {
     const getTotalPrice = () => {

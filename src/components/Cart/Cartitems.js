@@ -1,6 +1,6 @@
 import React from 'react'
 import Cartitem from './Cartitem';
-import {Layout} from '../Menu/layout';
+import {Layout} from '../layout';
 
 //rendering items by mapping it
 function CartItems({cartItems}) {
