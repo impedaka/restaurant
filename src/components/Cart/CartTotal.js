@@ -5,9 +5,10 @@ function CartTotal({getTotalPrice}) {
 
         return (
         <div>
-            SubTotal: ${getTotalPrice()}
-            Total: ${getTotalPrice()*1.13}
-            Tax: ${getTotalPrice()*0.13}
+            SubTotal: ${getTotalPrice().toFixed(2)}
+            Total: ${(getTotalPrice()*1.13).toFixed(2)}
+            Tax: ${(getTotalPrice()*0.13).toFixed(2)}
+            
             <Link to="/checkout"><button>Check Out</button></Link>
         </div>
     )

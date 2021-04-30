@@ -32,7 +32,7 @@ const Popular = () => {
                 popular.map((data) => (
             <Foods
                 title={data.popular.title}
-                price={data.popular.price}
+                price={data.popular.price.toFixed(2)}
                 image={data.popular.image}
                 id={data.id}
             />

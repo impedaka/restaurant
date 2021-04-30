@@ -8,7 +8,8 @@ import Cart from './components/Cart/Cart';
 import Popular from './components/Menu/Food/pages/popular';
 import Rice from './components/Menu/Food/pages/Rice';
 import Sidebar from './components/Menu/Sidebar';
-import Checkout from './components/CheckoutForm/Checkout/Checkout'
+import Checkout from './components/CheckoutForm/Checkout'
+import Completed from './components/CheckoutForm/Completed';
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -55,8 +56,13 @@ function App() {
           <Route exact path="/menu/special" component={Rice} />
           <Route exact path="/menu/vegetable" component={Rice} />
           <Route exact path="/menu/beverages" component={Rice} />
-          <Route exact path="/checkout" />
-          <Route exact path="/cart" component={Checkout}>
+          <Route exact path="/done">
+            <Completed cartItems={cartItems}/>
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout cartItems={cartItems}/>
+          </Route>
+          <Route exact path="/cart">
             <Cart cartItems={cartItems}/>
           </Route>
         </Switch>
