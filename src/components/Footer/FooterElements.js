@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const FooterContainer = styled.footer`
   background-color: #fa8072;
-  position: fixed; 
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
+  min-height: 100%;
+  margine-bottom: -50px;
 `;
 
 export const FooterWrap = styled.div`
