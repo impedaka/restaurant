@@ -4,11 +4,11 @@ import {Layout} from '../../../layout';
 import { db } from '../../../../firebase'
 
 //displays food data from db
-const Rice = () => {
+const Cooked = () => {
     const [popular, setPopular] = useState([])
 
     const getFoods = () => {
-        db.collection('rice').onSnapshot((snapshot) => {
+        db.collection('cooked').onSnapshot((snapshot) => {
             let tempPopular = []
             tempPopular = snapshot.docs.map((doc) => (
                 {
@@ -26,7 +26,7 @@ const Rice = () => {
 
     return (
         <div>
-            <h1 style={{padding: "40px 20px"}}>Rice Dish</h1>
+            <h1 style={{padding: "40px 20px"}}>Cooked Nigiri (1 Piece)</h1>
         <Layout>
             {
                 popular.map((data) => (
@@ -42,4 +42,4 @@ const Rice = () => {
     )
 }
 
-export default Rice;
+export default Cooked;

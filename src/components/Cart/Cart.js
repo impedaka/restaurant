@@ -22,12 +22,22 @@ function Cart({ cartItems }) {
 
         return count;
     }
-
+//if cart is empty, display empty cart message, else, display cart items
     return (
+        <>
         <div>
             <CartItems cartItems={cartItems}  />
-            <CartTotal getCount={getCount} getTotalPrice={getTotalPrice} />
-        </div>
+            {getTotalPrice() === 0 ? (
+                <div style={{padding: '0px 20px', position: 'relative', top: '-100px'}}>
+                <h3>You have no order :( </h3>
+                <p>Please go back to order something!</p>
+                </div>) : (
+                <>
+                <CartTotal cartItems={cartItems} getCount={getCount} getTotalPrice={getTotalPrice} />
+                </>
+                )}
+                </div>
+        </>
     )
 }
 

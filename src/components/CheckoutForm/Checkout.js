@@ -9,7 +9,7 @@ const Checkout = () => {
     });
 
     const handleSubmit = (e) => {
-
+//work in progress
     }
 
     return (

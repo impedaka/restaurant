@@ -6,10 +6,23 @@ import Navbar from './components/Menu/Navbar/index';
 import {db} from './firebase'
 import Cart from './components/Cart/Cart';
 import Popular from './components/Menu/Food/pages/popular';
-import Rice from './components/Menu/Food/pages/Rice';
+import Rice from './components/Menu/Food/pages/rice';
 import Sidebar from './components/Menu/Sidebar';
 import Checkout from './components/CheckoutForm/Checkout'
 import Completed from './components/CheckoutForm/Completed';
+import Appetizer from './components/Menu/Food/pages/appetizer'
+import Side from './components/Menu/Food/pages/side';
+import Entrees from './components/Menu/Food/pages/entrees';
+import Noodles from './components/Menu/Food/pages/noodles';
+import Sets from './components/Menu/Food/pages/sets';
+import Cooked from './components/Menu/Food/pages/cooked';
+import Raw from './components/Menu/Food/pages/raw'
+import Tempura from './components/Menu/Food/pages/tempura'
+import Regular from './components/Menu/Food/pages/regular'
+import Special from './components/Menu/Food/pages/special';
+import Vegetable from './components/Menu/Food/pages/vegetable';
+import Drinks from './components/Menu/Food/pages/drinks'
+import Footer from './components/Footer/index';
 
 function App() {
   const [cartItems, setCartItems] = useState([])
@@ -44,18 +57,18 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/menu" component={Popular} />
           <Route exact path="/menu/rice" component={Rice} />
-          <Route exact path="/menu/appetizers" component={Rice} />
-          <Route exact path="/menu/sides" component={Rice} />
-          <Route exact path="/menu/entrées" component={Rice} />
-          <Route exact path="/menu/noodles" component={Rice} />
-          <Route exact path="/menu/sets" component={Rice} />
-          <Route exact path="/menu/cooked" component={Rice} />
-          <Route exact path="/menu/raw" component={Rice} />
-          <Route exact path="/menu/tempura" component={Rice} />
-          <Route exact path="/menu/regular" component={Rice} />
-          <Route exact path="/menu/special" component={Rice} />
-          <Route exact path="/menu/vegetable" component={Rice} />
-          <Route exact path="/menu/beverages" component={Rice} />
+          <Route exact path="/menu/appetizers" component={Appetizer} />
+          <Route exact path="/menu/sides" component={Side} />
+          <Route exact path="/menu/entrées" component={Entrees} />
+          <Route exact path="/menu/noodles" component={Noodles} />
+          <Route exact path="/menu/sets" component={Sets} />
+          <Route exact path="/menu/cooked" component={Cooked} />
+          <Route exact path="/menu/raw" component={Raw} />
+          <Route exact path="/menu/tempura" component={Tempura} />
+          <Route exact path="/menu/regular" component={Regular} />
+          <Route exact path="/menu/special" component={Special} />
+          <Route exact path="/menu/vegetable" component={Vegetable} />
+          <Route exact path="/menu/beverages" component={Drinks} />
           <Route exact path="/done">
             <Completed cartItems={cartItems}/>
           </Route>
@@ -66,6 +79,7 @@ function App() {
             <Cart cartItems={cartItems}/>
           </Route>
         </Switch>
+        <Footer/>
       </BrowserRouter>
   );
 }
